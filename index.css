@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    background-color: rgb(127, 189, 214);
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.container,
+.section {
+    border-radius: 0 1rem 0 1rem;
+    padding: 1.5rem;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+    display: flex;
+    background-color: #F5F7FA;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    margin: 1rem;
+    padding: 0.7rem;
+    border: 0.1rem dotted #615c5c;
+    border-radius: 1rem;
+}
+
+.section code {
+    background: #ffd1d1;
+    color: #615c5c;
+    border-radius: 0.8rem 0;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+        Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.section input {
+    background: #e3ffd1;
+    color: #615c5c;
+    border-radius: 0.8rem 0;
+    padding: 0.75rem;
+}
+
+.section select {
+    background: #b2f0ff;
+    color: #615c5c;
+    border-radius: 0.8rem 0;
+    margin-left: 1rem;
+    padding: 0.75rem;
+}
+
+.row {
+    font-size: 1.3em;
+    margin: 0.5rem;
+}

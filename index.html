@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Basic page created using HTML">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic!</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body onload="load_body()">
+    <div class="container">
+        <h1>Basics!</h1>
+        <span id="no-js">If you are seeing this message, kindly enable javascript</span>
+        <div class="section">
+            <p><code>Operations</code></p>
+            <div class="row"><b>A</b> = <input type="number" id="a" value="100" onchange="operations()" /></div>
+            <div class="row"><b>B</b> = <input type="number" id="b" value="25" onchange="operations()" /></div>
+            <div class="row">A + B = <span id="sum">0</span></div>
+            <div class="row">A - B = <span id="subtract">0</span></div>
+            <div class="row">A x B = <span id="multiply">0</span></div>
+            <div class="row">A / B = <span id="division">0</span></div>
+        </div>
+        <div class="section">
+            <p><code>Length Conversion</code></p>
+            <div class="row"><input type="number" id="length" value="50" onchange="conversion()" />
+                <select id="unit" onchange="conversion()">
+                    <option value="m">meter</option>
+                    <option value="cm">centimeter</option>
+                    <option value="km">kilometer</option>
+                </select>
+            </div>
+            <div class="row"><input type="number" disabled id="length_converted" value="0" />
+                <select id="unit_converted" onchange="conversion()">
+                    <option value="m">meter</option>
+                    <option selected value="cm">centimeter</option>
+                    <option value="km">kilometer</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
